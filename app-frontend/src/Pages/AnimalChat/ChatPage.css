@@ -1,0 +1,174 @@
+.wholeScreen {
+    flex-direction: column;
+    background-color: #000; /* Fundo preto */
+    height: 100vh;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    flex-direction: line;
+    align-items: left;
+    justify-content: left;
+    background-color: #000; /* Fundo preto */
+    height: 5vh;
+}
+
+.text-img {
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 270px; 
+    /* width: 10%; */
+    height: 37px;
+    /* margin-bottom: 27px; */
+}
+.robot-img {
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px; 
+    /* height: auto; */
+    /* margin-bottom: 27px; */
+}
+
+/* Container principal */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    /* padding: 10px; */
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 90%;
+    align-self: flex-end;
+    overflow-y: auto; /* Habilita a rolagem vertical */
+}
+
+/* Área de mensagens */
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid #ff9800; /* Borda laranja */
+    border-radius: 10px;
+    background-color: #1e1e1e; /* Fundo cinza escuro */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilo das mensagens */
+.chat-message {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+/* Mensagem do usuário (esquerda) */
+.user-message {
+    align-self: flex-start;
+    background-color: #4caf50; 
+    /* background-color: #f5a731; */
+    color: #fff;
+}
+
+/* Mensagem do servidor (direita) */
+.server-message {
+    align-self: flex-end;
+    background-color: #f7a121;
+    color: #000;
+}
+
+.server-message-yes {
+    align-self: flex-end;
+    background-color: #4caf50;
+    color: #000;
+}
+
+.server-message-no {
+    align-self: flex-end;
+    background-color: #4caf50;
+    color: #000;
+}
+
+.server-message-dontknow {
+    align-self: flex-end;
+    background-color: #4caf50;
+    color: #000;
+}
+
+/* Área de entrada de texto */
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Campo de texto */
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Botão de enviar */
+.chat-send-button {
+    padding: 10px 20px;
+    background-color: #ff9800; /* Laranja */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-send-button:hover {
+    background-color: #ffa726; /* Laranja mais claro */
+}
+
+.go-back-button {
+    margin-top: 15px;
+    margin-left: 1290px;
+    /* padding: 10px 20px; */
+    background-color: #ff9800; /* Laranja */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Personalizando o scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Largura do scrollbar */
+}
+
+/* Thumb (parte arrastável) */
+::-webkit-scrollbar-thumb {
+    background-color: #ff7f00; /* Cor laranja para o thumb */
+    border-radius: 10px; /* Cantos arredondados */
+    border: 3px solid #000; /* Borda preta ao redor do thumb */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra no thumb */
+}
+
+/* Track (área onde o thumb se move) */
+::-webkit-scrollbar-track {
+    background-color: #000; /* Cor preta para o track */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra interna no track */
+}

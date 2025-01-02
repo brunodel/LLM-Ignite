@@ -1,0 +1,64 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000; /* Fundo preto */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+}
+
+/* Estilização da imagem */
+.game-image {
+    width: 300px; /* Tamanho maior */
+    height: auto;
+    margin-bottom: 27px;
+}
+
+/* Estilização das instruções */
+.game-instructions {
+    background-color: #f0f7f7d3; /* Fundo branco */
+    color: #000; /* Texto preto */
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a caixa */
+    margin-bottom: 20px;
+    border: 3px solid #613d06;
+}
+
+.game-instructions h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e08a08; /* Título em laranja */
+}
+
+.game-instructions p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333; /* Texto cinza escuro */
+}
+
+/* Estilização do botão */
+.start-button {
+    width: 120px;
+    height: 120px;
+    background-color: #e08a08; /* Fundo laranja */
+    color: #000; /* Texto preto */
+    border: none;
+    border-radius: 40%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 3px solid #613d06;
+    /* border-radius: 10px; */
+}
+
+.start-button:hover {
+    background-color: #ffa726; /* Laranja mais claro */
+    transform: scale(1.1); /* Animação de zoom */
+}

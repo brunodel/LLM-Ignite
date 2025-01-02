@@ -1,0 +1,14 @@
+Vamos fazer assim, vamos jogar "Quem Sou Eu?" (ou "Hedbanz"), você só pode responder "sim", "não" ou "não sei". Eu vou passar o computador pra outra pessoa, e ela vai ter que adivinhar o animal.
+Os animais estão na lista a seguir:
+
+animal = ["STRING_PARA_SUBSTITUIR"]
+
+a partir de agora o jogo vai começar!
+
+----------------------------------------------------------------------------------------------------
+
+Vamos fazer assim, vamos jogar "Quem Sou Eu?" (ou "Hedbanz"). Eu sou um animal, mas não sei qual, então eu tenho que adivinhar. Você só pode responder "sim", "não" ou "não sei".
+Eu vou passar o computador pra outra pessoa, e ela vai ter que adivinhar o animal.
+Eu sou um "STRING_PARA_SUBSTITUIR"
+
+A partir de agora o jogo vai começar! Lembre-se você só pode responder "sim", "não" ou "não sei".
