@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './ChatPage.css';
 import { callMessageChat } from '../../Services/CallBackend'
 import { useNavigate  } from 'react-router-dom';
-import bonecoIA from 'C:/Users/bdelb/Desktop/projects/LLM-Igniter/app-frontend/src/so_boneco_ia.png';
-import textoIA from 'C:/Users/bdelb/Desktop/projects/LLM-Igniter/app-frontend/src/texto_ia.png';
+import bonecoIA from '../../imgs/so_boneco_ia.png';
+import textoIA from '../../imgs/texto_ia.png';
 import { useLocation } from "react-router-dom";
 
 function AnimalChat() {
