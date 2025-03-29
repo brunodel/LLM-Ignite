@@ -25,16 +25,10 @@ public class InitialCallService {
 
     public String createInitialPrompt() throws Exception {
 
-        //log.info(response);
+        log.info("Creating Initial-call prompt");
         int randomNumber = generateRandomNumber();
 
         String animal = animalDao.getAnimal(randomNumber);
-
-//        String initialPrompt = getInitialPromptFormat().replace(stringToReplaceByAnimal, animal);
-//
-//        String response = openAIService.createOpenAiRequest(initialPrompt);
-//
-//        log.info(response);
 
         return animal;
     }

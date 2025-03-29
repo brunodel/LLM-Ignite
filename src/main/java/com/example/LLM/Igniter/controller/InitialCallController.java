@@ -24,14 +24,14 @@ public class InitialCallController {
 
     InitialCallService initialCallService;
 
-    AnimalDao animalDao;
+//    AnimalDao animalDao;
 
 
     @GetMapping("/initial-call")
     public ResponseEntity<String> makeInitialCall() throws Exception {
 
-        log.info("Initial-call request");
-        //log.info(response);
+        log.info("Initial-call request received");
+
         String response = initialCallService.createInitialPrompt();
 
         return new ResponseEntity<>(response, HttpStatus.OK);

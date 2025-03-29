@@ -3,7 +3,7 @@ import axios from 'axios';
 export const callMessageChat = async (userMessage, setMessages, animal) => {
     // debugger
     try {
-        const response = await axios.post('http://localhost:8080/v1/llm/igniter', {
+        const response = await axios.post('http://localhost:8080/v1/llm/chat', {
             userChatMessage: userMessage,
             animal: animal
         });
