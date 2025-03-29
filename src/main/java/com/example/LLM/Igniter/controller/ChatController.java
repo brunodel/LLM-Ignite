@@ -1,6 +1,5 @@
 package com.example.LLM.Igniter.controller;
 
-import com.example.LLM.Igniter.model.AnimalApiCallVo;
 import com.example.LLM.Igniter.model.ChatMessageDTO;
 import com.example.LLM.Igniter.service.OpenAIService;
 import lombok.AccessLevel;
@@ -16,17 +15,17 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Slf4j
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
-public class LlmController {
+public class ChatController {
 
     OpenAIService openAIService;
 
 
-    @PostMapping("/igniter")
-//    public ResponseEntity<AnimalApiCallVo> gameApi(@RequestBody AnimalApiCallVo animalApiCallVo) throws Exception {
+    @PostMapping("/chat")
     public ResponseEntity<String> gameApi(@RequestBody ChatMessageDTO chatMessageDTO) throws Exception {
 
-        String response = openAIService.createOpenAiRequest(chatMessageDTO);
+        log.info("Chat call received: Animal={}, userChatMessage={}", chatMessageDTO.getAnimal(), chatMessageDTO.getUserChatMessage());
 
+        String response = openAIService.createOpenAiRequest(chatMessageDTO);
         log.info(response);
 
         return new ResponseEntity<>(response, HttpStatus.OK);
