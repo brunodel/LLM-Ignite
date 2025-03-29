@@ -1,6 +1,6 @@
 import React from 'react';
 import './GamePage.css'
-import localImage from 'C:/Users/bdelb/Desktop/projects/LLM-Igniter/app-frontend/src/img2.png';
+import localImage from '../../imgs/img2.png';
 import { useNavigate  } from 'react-router-dom';
 import { makeInitialCall } from '../../Services/CallBackend'
 
