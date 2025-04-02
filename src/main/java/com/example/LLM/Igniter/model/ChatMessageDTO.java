@@ -15,4 +15,6 @@ public class ChatMessageDTO {
 
     private String animal;
 
+    private Long id;
+
 }

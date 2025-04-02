@@ -43,7 +43,7 @@ public class OpenAIService {
     private final RestTemplate restTemplate;
 
     public String createOpenAiRequest(ChatMessageDTO chatMessageDTO) throws Exception{
-        chatMessageDTO.setId(1L);
+        // chatMessageDTO.setId(1L);
         log.info("Creating request to call Open AI");
         // Configura o cabeçalho com a chave da API
         HttpHeaders headers = createHeaders();
