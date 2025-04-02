@@ -23,7 +23,10 @@ public class ChatController {
     @PostMapping("/chat")
     public ResponseEntity<String> gameApi(@RequestBody ChatMessageDTO chatMessageDTO) throws Exception {
 
-        log.info("Chat call received: Animal={}, userChatMessage={}", chatMessageDTO.getAnimal(), chatMessageDTO.getUserChatMessage());
+        log.info("Chat call received: Animal={}, userChatMessage={}, id={}",
+                chatMessageDTO.getAnimal(),
+                chatMessageDTO.getUserChatMessage(),
+                chatMessageDTO.getId());
 
         String response = openAIService.createOpenAiRequest(chatMessageDTO);
         log.info(response);
