@@ -65,6 +65,8 @@ public class Util {
                 "\n" +
                 "-----\n" +
                 "\n" +
+                "Tente passar um tom natural e amigável, como se vocês dois fossem amigos brincando e se divertindo!\n" +
+                "\n" +
                 "A partir de agora o jogo vai começar!";
     }
 
