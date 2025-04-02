@@ -1,15 +1,12 @@
 package com.example.LLM.Igniter.service;
 
 import com.example.LLM.Igniter.repository.AnimalDao;
-import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
-import lombok.experimental.FieldDefaults;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import static com.example.LLM.Igniter.util.Util.generateRandomNumber;
-import static com.example.LLM.Igniter.util.Util.getInitialPromptFormat;
 
 @Service
 @RequiredArgsConstructor
