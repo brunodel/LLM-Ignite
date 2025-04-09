@@ -14,8 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.example.LLM.Igniter.util.Util.getInitialPromptFormat;
-import static com.example.LLM.Igniter.util.Util.objectToString;
+import static com.example.LLM.Igniter.util.Util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -77,7 +76,7 @@ public class OpenAIService {
     }
 
     private  List<Map<String, String>> createMessages(ChatMessageDTO chatMessageDTO) {
-        String initialPrompt = getInitialPromptFormat().replace(stringToReplaceByAnimal, chatMessageDTO.getAnimal());
+        String initialPrompt = getSetAnimalPrompt().replace(stringToReplaceByAnimal, chatMessageDTO.getAnimal());
 
 //        {"role": "system", "content": "Você é um assistente útil e amigável."}
         Map<String, String> map1 = Map.of("role", "system",
